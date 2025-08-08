@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hadin's Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Hadin</a>
+      <button id="navToggle" class="nav-toggle" aria-label="toggle menu">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div>
+        <h1>Hi — I'm Hadin.</h1>
+        <p>Student • Learner • Builder — I love science, coding, and exploring new ideas.</p>
+        <p><a class="btn" href="#contact">Get in touch</a></p>
+      </div>
+      <img alt="illustration" src="https://picsum.photos/420/260" />
+    </section>
+
+    <section id="about" class="container card">
+      <h2>About</h2>
+      <p>I am a 1st-year BSc Physics student, passionate about technology, coding, and scientific research. I enjoy learning Python, web development, and exploring the wonders of astrophysics and biology.</p>
+      <ul>
+        <li>1st-year BSc student</li>
+        <li>Learning Python & web development</li>
+        <li>Interested in astrophysics & biology</li>
+      </ul>
+    </section>
+
+    <section id="work" class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="tile">
+          <img src="https://picsum.photos/seed/a/400/200" alt="project 1">
+          <h3>Physics Simulation</h3>
+          <p>A simple simulation demonstrating Newton’s laws using Python.</p>
+        </article>
+        <article class="tile">
+          <img src="https://picsum.photos/seed/b/400/200" alt="project 2">
+          <h3>Personal Portfolio Website</h3>
+          <p>This website, built with HTML, CSS, and JavaScript to showcase my skills.</p>
+        </article>
+        <article class="tile">
+          <img src="https://picsum.photos/seed/c/400/200" alt="project 3">
+          <h3>Space Facts Blog</h3>
+          <p>A fun blog sharing interesting astronomy and astrophysics facts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container card">
+      <h2>Contact</h2>
+      <p>If you want to talk — email me:</p>
+      <form onsubmit="contactSubmit(event)">
+        <label>
+          Name <input id="name" type="text" placeholder="Your name" required>
+        </label>
+        <label>
+          Message <textarea id="message" placeholder="Hi..." required></textarea>
+        </label>
+        <button class="btn" type="submit">Send (opens email)</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Hadin • Built with HTML, CSS & JS</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
